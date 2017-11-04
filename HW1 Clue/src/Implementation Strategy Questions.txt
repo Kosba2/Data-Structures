@@ -1,0 +1,10 @@
+How often do you get a solution in few than 20 guesses? Does this change depending on the theory you test (1,2,3)?
+
+- You should get a solution fairly frequently around 15-20 attempts, as the idea is process of elemination and getting the correct combination. This should not ever change because at the core the numbers you choose are still random, non-repeated.
+
+
+What is good/bad about this strategy?
+
+- In small scale combinations, the run to returns is fairly low, but as the number of each item goes up, the number of combinations go up at a significantly faster rate. Therefore this should get less efficient the more possible combinations there are.
+
+- In terms of my implementation, the idea was to make a guess, take the feedback on what is wrong, and add it to the appropriate list of numbers not to guess anymore. That way from possible lists of 6, 10, 6, the most you can get wrong on each list is 5, 9, and 5. This adds up to 19 max wrong runs, and the 20th would have to be all the correct guesses, hence the limit of 20.

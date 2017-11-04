@@ -1,0 +1,22 @@
+// 1 I assignment, N runs, and N-1 I++'s
+// Loop actions total 2N + 1
+for (int i = 1; i < n; i++)
+{
+	System.out.println("l is " + l++);
+	for (int j = 0; j < i; j++)
+	{
+		System.out.println("k is " + k++);
+		if (j % i == 0)
+		{
+			//System.out.println(i + " " + j);
+		}
+	}
+}
+// The overall loops run some n(n-1)/2 times but the actual interior
+// of the loop only runs once per exterior loop, which runs n-1 times
+// due to the fact that it starts at 1 and goes while less than n
+// Therefore, the inner part of the loops runs n-1 times
+
+// Final result is a linear relationship of magnitude N
+
+// Program is O(N)

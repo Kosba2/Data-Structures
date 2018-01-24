@@ -1,3 +1,0 @@
-PreOrder : lay, house, cow, jack, rat, milked, that
-InOrder	 : cow, house, jack, lay, milked, rat, that
-PostOrder: cow, jack, house, milked, that, rat, lay
